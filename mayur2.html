@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capture Plastic</title>
+  <link rel="stylesheet" href="mayur2.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: green;">♻ Click a Picture ♻</h1>
+    <p>Use your camera to capture a plastic item.</p>
+
+    <!-- Hidden File Input -->
+    <input type="file" accept="image/*" capture="environment" id="cameraInput" onchange="handleCapture(event)">
+
+    <!-- Camera Button -->
+    <button class="camera-button" onclick="openCamera()">Open Camera</button>
+
+    <!-- Next Button -->
+    <br />
+    <button class="next-button" onclick="navigate('upload.html')">Next</button>
+  </div>
+</body>
+</html>
